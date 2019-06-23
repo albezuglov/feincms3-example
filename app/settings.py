@@ -26,7 +26,7 @@ SECRET_KEY = '=l8r3p_(egb1n%j&i*r5zr=0lo68@!7y=dx^p(5eip%6kpt-3p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -93,6 +93,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'feincms3_example',
+        'USER': 'postgres',
     }
 }
 
